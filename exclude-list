@@ -1,0 +1,7 @@
+/proc/*
+/sys/*
+/dev/*
+/media/*
+/tmp/*
+/mnt/*
+/home/psql/data/*

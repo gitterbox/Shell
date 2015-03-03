@@ -1,0 +1,35 @@
+#!/bin/bash
+#Sicherungsziel
+#######TARGET############
+TARGET=/tmp
+
+CONF=$TARGET/.backup
+#Pfad der Skripte
+PTH=/home/rene/docs/p/backii
+FILE=$CONF/counter
+LEERE="/bin/cat /dev/null"
+
+#######SOURCE############
+#example 
+#DIR1="/home/rene/ --exclude=.gvfs --exclude=Bilder --exclude=backup\
+				#				--exclude=Videos --exclude=Musik --exclude=.VirtualBox --exclude=Downloads"
+#src_name="/media/win/Dokumente und Einstellungen/user/Documents"
+DIR1=""
+DIR2="/home/rene/Bash --exclude=Downloads --exclude=backup --exclude=Image"
+DIR3=""
+#########################
+INFO="0 -> Vollsicherung 1-N -> Differentielle Sicherungen"
+MAIL1=root
+ZEIT=`date +%d%m%y-%T|sed 's/://'|sed 's/://'`
+TMP=$ZEIT
+NOW=$TMP
+STEMPEL=$CONF/zeitstempel
+STEMPELTMP=/tmp/zeitstempel
+#Pfad ohne Slash am Ende 
+LOG=$PTH/backup.log
+DIFLOG=/tmp/diflog
+BETREFF=$0_$GERAET
+#Anzahl der differentiellen Backups bevor wieder ein Vollbackup erstellt wird
+LIMIT=7
+VBFILE=vollbackup.tar
+##########################
