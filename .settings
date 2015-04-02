@@ -1,21 +1,22 @@
 #!/bin/bash
 #Sicherungsziel
 #######TARGET############
-TARGET=/tmp
+#TARGET=/c/Users/user/Desktop/snap
+TARGET=/h/soft
 
 CONF=$TARGET/.backup
 #Pfad der Skripte
-PTH=/home/rene/docs/p/backii
+PTH=/c/Users/user/Desktop/Shell
 FILE=$CONF/counter
 LEERE="/bin/cat /dev/null"
 
 #######SOURCE############
 #example 
-#DIR1="/home/rene/ --exclude=.gvfs --exclude=Bilder --exclude=backup\
+#DIR1="/home/user/ --exclude=.gvfs --exclude=Bilder --exclude=backup\
 				#				--exclude=Videos --exclude=Musik --exclude=.VirtualBox --exclude=Downloads"
 #src_name="/media/win/Dokumente und Einstellungen/user/Documents"
 DIR1=""
-DIR2="/home/rene/Bash --exclude=Downloads --exclude=backup --exclude=Image"
+DIR2=/c/Users/user/Desktop/Neuer
 DIR3=""
 #########################
 INFO="0 -> Vollsicherung 1-N -> Differentielle Sicherungen"
