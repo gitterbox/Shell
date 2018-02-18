@@ -14,4 +14,3 @@ it includes bash
 ## restore
 * run: tar xfv [path to your fullbackup_file]
 * run: tar xfv [path to your last diff_file]
-
